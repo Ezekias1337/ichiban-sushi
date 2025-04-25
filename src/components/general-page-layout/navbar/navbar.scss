@@ -1,0 +1,219 @@
+@import "../../../css/variables";
+
+nav.navbar {
+  background-color: $neutral-800;
+  width: calc(100% - 160px);
+
+  &.glassmorphic-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    //width: 100vw;
+    z-index: 1000; // Ensure it stays on top of other elements
+    background: linear-gradient(rgba(#141e31, 0.7), rgba(#626b7b, 0.4));
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+
+    .nav-link {
+      color: $primary-500;
+    }
+  }
+
+  .navbar-brand {
+    display: inline-block;
+    .navbar-logo {
+      width: 150px;
+    }
+  }
+
+  .nav-link {
+    font-size: 32px;
+  }
+
+  .navbar-menu {
+    width: 100%;
+  }
+
+  .navbar-menu ul {
+    justify-content: end;
+    gap: 30px;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 0px;
+    }
+
+    li {
+      display: block;
+
+      .nav-link {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .nav-link-underline {
+    height: 2.5px;
+    width: 0%;
+    transition: 0.3s;
+  }
+
+  .nav-link-wrapper:hover {
+    .nav-link-underline {
+      width: 100%;
+      transition: 0.3s;
+    }
+  }
+
+  .dropdown-menu-wrapper {
+    .nav-link {
+      gap: 5px;
+    }
+
+    .dropdown-content,
+    .dropdown-content-open {
+      margin-top: 5px;
+      width: 200%;
+      background-color: $neutral-800;
+      border: 1.5px solid $primary-500;
+      right: -50%;
+      border-radius: $border-radius;
+      -webkit-border-radius: $border-radius;
+      -moz-border-radius: $border-radius;
+      -ms-border-radius: $border-radius;
+      -o-border-radius: $border-radius;
+
+      @media screen and (max-width: 768px) {
+        width: calc(100vw - 60px);
+        left: -220%;
+      }
+    }
+
+    .dropdown-content {
+      opacity: 0;
+      visibility: hidden;
+      max-height: 0px;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .dropdown-content-open {
+      opacity: 1;
+      visibility: visible;
+      max-height: 800px;
+    }
+
+    .dropdown-item {
+      text-decoration: none;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: $primary-500;
+      width: calc(100% - 40px);
+
+      &:hover {
+        color: $primary-200;
+        background-color: $primary-500;
+      }
+    }
+
+    .dropdown-item-underline {
+      width: 100%;
+      color: $primary-500;
+      margin: 0px;
+    }
+  }
+
+  .navbar-background-image {
+    position: absolute;
+    width: 100%;
+  }
+
+  .nav-link {
+    color: $primary-600;
+  }
+
+  .nav-link-wrapper:hover {
+    .nav-link {
+      color: $primary-400 !important;
+    }
+  }
+
+  .nav-link-underline {
+    background-color: $primary-400;
+  }
+
+  /* 
+  Resize the logo depending on screen size
+  ! 768 breakpoint for when nav becomes mobile 
+  */
+
+  @media screen and (max-width: 768px) {
+    display: block !important;
+    padding-bottom: 20px;
+
+    .navbar-menu {
+      opacity: 0;
+      visibility: hidden;
+      max-height: 0px;
+      transition: all 0.5s ease-in-out;
+    }
+
+    .navbar-menu-open {
+      opacity: 1;
+      visibility: visible;
+      max-height: 800px;
+    }
+
+    .navbar-menu ul {
+      flex-direction: column;
+    }
+
+    .nav-link {
+      font-size: $header-6;
+    }
+
+    .navbar-brand {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .navbar-toggle {
+        height: calc(100%);
+        background-color: $primary-900;
+        color: $primary-500;
+        border: 1px solid $primary-500;
+        box-shadow: 0px 0px 0px 0px transparent;
+        transition: box-shadow 0.3s ease-in-out;
+        padding: 5px 15px;
+        border-radius: $border-radius;
+        padding-bottom: 8px;
+
+        span {
+          font-size: $header-5;
+        }
+
+        &:hover,
+        &:focus {
+          box-shadow: 0px 3px 5px 0px $primary-700;
+        }
+      }
+    }
+
+    .nav-link {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: 840px) {
+    .nav-link {
+      font-size: $header-6;
+    }
+  }
+
+  @media screen and (min-width: 950px) {
+    .nav-link {
+      font-size: $header-6;
+    }
+  }
+}

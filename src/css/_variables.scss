@@ -1,0 +1,92 @@
+/* Color styles */
+$primary-100: #fce8e8;
+$primary-200: #f6b1ae;
+$primary-300: #f1786f;
+$primary-400: #ec4031;
+$primary-500: #d7140f;
+$primary-600: #ac100c;
+$primary-700: #820c09;
+$primary-800: #570805;
+$primary-900: #2d0402;
+
+$success-100: #e8fce9;
+$success-200: #b1f6b6;
+$success-300: #78f18b;
+$success-400: #31ec60;
+$success-500: #0fd738;
+$success-600: #0cac2d;
+$success-700: #098221;
+$success-800: #055716;
+$success-900: #022d0b;
+
+$warning-100: #fff8e8;
+$warning-200: #ffe9b1;
+$warning-300: #ffd878;
+$warning-400: #ffc631;
+$warning-500: #ffb000;
+$warning-600: #cc8c00;
+$warning-700: #996800;
+$warning-800: #664400;
+$warning-900: #332200;
+
+$error-100: #fce8e8;
+$error-200: #f6b1ae;
+$error-300: #f1786f;
+$error-400: #ec4031;
+$error-500: #d7140f;
+$error-600: #ac100c;
+$error-700: #820c09;
+$error-800: #570805;
+$error-900: #2d0402;
+
+$info-100: #e8f2fc;
+$info-200: #b1d4f6;
+$info-300: #78b3f1;
+$info-400: #3191ec;
+$info-500: #0f6ed7;
+$info-600: #0c57ac;
+$info-700: #094182;
+$info-800: #053a57;
+$info-900: #02232d;
+
+$neutral-100: #fcfcfd;
+$neutral-200: #d0d3d7;
+$neutral-300: #a7acb4;
+$neutral-400: #7d8491;
+$neutral-500: #626b7b;
+$neutral-600: #354054;
+$neutral-700: #141e31;
+$neutral-800: #040a15;
+$neutral-900: #000103;
+
+$transparent-black-100: rgba($neutral-900, 0.1);
+$transparent-black-200: rgba($neutral-900, 0.2);
+$transparent-black-300: rgba($neutral-900, 0.3);
+$transparent-black-400: rgba($neutral-900, 0.4);
+$transparent-black-500: rgba($neutral-900, 0.5);
+$transparent-black-600: rgba($neutral-900, 0.6);
+$transparent-black-700: rgba($neutral-900, 0.7);
+$transparent-black-800: rgba($neutral-900, 0.8);
+$transparent-black-900: rgba($neutral-900, 0.9);
+
+$header-1: 53.75px;
+$header-2: 44.79px;
+$header-3: 37.32px;
+$header-4: 31.1px;
+$header-5: 25.92px;
+$header-6: 21.6px;
+$paragraph: 18px;
+$small: 15px;
+$extra-small: 12.5px;
+
+$border-radius: 5px;
+
+/* Effect styles */
+$primary-shadow: 0px 0px 5px rgba($primary-300, 1);
+$primary-dark-shadow: 0px 0px 5px rgba($primary-800, 1);
+$success-shadow: 0px 0px 5px rgba($success-300, 1);
+$warning-shadow: 0px 0px 5px rgba($warning-300, 1);
+$error-glow: 0px 0px 5px rgba($error-300, 1);
+$info-glow: 0px 0px 5px rgba($info-300, 1);
+$neutral-glow: 0px 0px 5px rgba($neutral-100, 1);
+$neutral-dark-glow: 0px 0px 5px rgba($neutral-800, 1);
