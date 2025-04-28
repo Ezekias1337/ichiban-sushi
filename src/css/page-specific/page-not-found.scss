@@ -1,7 +1,7 @@
-@import "../../css/variables";
+@use "../../css/variables" as *;
 
 .page-not-found {
-  background-color: $neutral-800;
+  background-color: $neutral-100;
 
   .page-not-found-warning {
     padding-top: 160px;
@@ -11,7 +11,7 @@
 
   .page-not-found-explanation {
     padding-bottom: 40px;
-    color: $neutral-200;
+    color: $neutral-600;
   }
 
   .button-wrapper {

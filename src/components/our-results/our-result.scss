@@ -1,4 +1,4 @@
-@import "../../css/variables";
+@use "../../css/variables" as *;
 
 .individual-result-container {
   min-width: 200px;

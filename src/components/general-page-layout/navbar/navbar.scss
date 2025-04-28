@@ -1,7 +1,7 @@
-@import "../../../css/variables";
+@use "../../../css/variables" as *;
 
 nav.navbar {
-  background-color: $neutral-800;
+  background-color: $primary-100;
   width: calc(100% - 160px);
 
   &.glassmorphic-navbar {

@@ -24,18 +24,9 @@ const Footer = () => {
         </div>
 
         <div className="social-col display-flex">
-          <FooterSocialIcon
-            icon={faInstagram}
-            url=""
-          />
-          <FooterSocialIcon
-            icon={faFacebook}
-            url=""
-          />
-          <FooterSocialIcon
-            icon={faXTwitter}
-            url=""
-          />
+          <FooterSocialIcon icon={faInstagram} url="" />
+          <FooterSocialIcon icon={faFacebook} url="" />
+          <FooterSocialIcon icon={faXTwitter} url="" />
         </div>
       </div>
       <div className="footer-navigation display-flex justify-content-space-around">
@@ -87,8 +78,12 @@ const Footer = () => {
       <div className="footer-copywrite-disclaimer-wrapper align-items-center display-flex justify-content-space-between">
         <div className="copywrite-container display-flex">
           <small className="copywrite-disclaimer">
-            © 2024 Code Decoded LLC
+            © 2025 by WebLord LLC | Created by Code Decoded
           </small>
+          <a href="https://weblordshub.com/" target="_blank">
+            <img src="https://weblordshub.com/assets/logo-5CMEOra5.png" style={{width: "50px"}}/>
+          </a>
+          
         </div>
 
         <div className="footer-bottom-navigation-wrapper display-flex justify-content-right">

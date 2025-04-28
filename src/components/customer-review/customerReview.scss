@@ -1,4 +1,4 @@
-@import "../../css/variables";
+@use "../../css/variables" as *;
 
 .customer-review {
   border: 1.5px solid $primary-500;

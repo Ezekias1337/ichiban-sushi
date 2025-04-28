@@ -1,6 +1,6 @@
 // Library Imports
 import React, { useState } from "react";
-import { Link, useLocation } from "@tanstack/react-router";
+import { Link, /* useLocation */ } from "@tanstack/react-router";
 // Functions, Helpers, Utils, and Hooks
 import useWindowWidth from "../../../hooks/useWindowWidth";
 // Components
@@ -14,17 +14,17 @@ import logo from "/assets/images/logo/logo.webp";
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const windowWidth = useWindowWidth();
-  const location = useLocation();
+  //const location = useLocation();
 
 
-  const listOfUrlsToUseGlassmorphicVariant = ["/", "/login"];
-  let variant: string;
+  //const listOfUrlsToUseGlassmorphicVariant = ["/", "/login"];
+  const variant: string = "default"
 
-  if (listOfUrlsToUseGlassmorphicVariant.includes(location.pathname)) {
+  /* if (listOfUrlsToUseGlassmorphicVariant.includes(location.pathname)) {
     variant = "glassmorphic";
   } else {
     variant = "default";
-  }
+  } */
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);

@@ -1,4 +1,4 @@
-@import "../../css/variables";
+@use "../../css/variables" as *;
 
 .card {
   border-radius: $border-radius;

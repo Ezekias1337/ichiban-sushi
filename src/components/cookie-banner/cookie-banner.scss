@@ -1,7 +1,7 @@
-@import "../../css/variables";
+@use "../../css/variables" as *;
 
 .cookie-banner {
-  background-color: $neutral-800;
+  background-color: $primary-300;
   position: sticky;
   bottom: 0;
   left: 0;
@@ -14,7 +14,7 @@
   }
   
   .cookie-banner-text {
-    color: $primary-100;
+    color: $neutral-700;
     font-size: $header-6;
   }
 }
