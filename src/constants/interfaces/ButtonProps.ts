@@ -23,4 +23,5 @@ export interface ButtonProps {
   buttonId?: string | undefined;
   additionalClassNames?: string | undefined;
   buttonSize?: "small" | "medium" | "large";
+  children?: React.ReactNode;
 }

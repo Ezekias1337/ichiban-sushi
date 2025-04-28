@@ -23,6 +23,7 @@ export const Button: FC<ButtonProps> = ({
   buttonId = null,
   additionalClassNames,
   buttonSize = "small",
+  children,
 }) => {
   const renderButtonContent = () => {
     let loaderVariant: string;
@@ -70,6 +71,7 @@ export const Button: FC<ButtonProps> = ({
         {rightIcon && icon && (
           <FontAwesomeIcon icon={icon} className="right-icon" />
         )}
+        {children !== undefined ? children : null}
       </>
     );
   };
