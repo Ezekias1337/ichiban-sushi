@@ -11,147 +11,87 @@ const TermsOfService = () => (
   <div className="terms-of-service">
     <HelmetProvider>
       <Helmet>
-        <title>Code Decoded | Terms of Service</title>
+        <title>Ichiban Sushi | Terms of Service</title>
       </Helmet>
     </HelmetProvider>
-    
+
     <PageHeader title="Terms Of Service" />
     <div className="terms-of-service-wrapper padding-left-and-right">
       <p>
-        Welcome to Code Decoded! These Terms of Service ("Terms") govern your
-        use of our website and services. By accessing or using our website, you
-        agree to comply with and be bound by these Terms. If you do not agree to
-        these Terms, please do not use our website.
+        Welcome to Ichiban Sushi! These Terms of Service ("Terms") govern your
+        use of our website. By accessing or using our website, you agree to comply
+        with and be bound by these Terms. If you do not agree, please refrain from
+        using our website.
       </p>
 
-      <h2 className="padding-top-40 padding-bottom-20">
-        1. Acceptance of Terms
-      </h2>
+      <h2 className="padding-top-40 padding-bottom-20">1. Website Usage</h2>
       <p>
-        By accessing and using the services provided by Code Decoded, you accept
-        and agree to be bound by these Terms, our Privacy Policy, and any other
-        policies or guidelines posted on our website.
+        Our website is intended to provide general information about Ichiban Sushi,
+        including our menu, business hours, location, and contact details. All
+        content is for informational purposes only and may be updated without notice.
       </p>
 
-      <h2 className="padding-top-40 padding-bottom-20">2. Services</h2>
+      <h2 className="padding-top-40 padding-bottom-20">2. User Conduct</h2>
       <p>
-        Code Decoded provides web design and development services, mobile app
-        development, digital marketing, SEO, content creation, and custom logo
-        design. The specific services to be provided will be outlined in a
-        separate agreement or project proposal.
-      </p>
-
-      <h2 className="padding-top-40 padding-bottom-20">
-        3. User Responsibilities
-      </h2>
-      <p>
-        As a user of our services, you agree to:
+        When using our website, you agree to:
         <ul>
-          <li>Provide accurate and complete information when requested.</li>
-          <li>
-            Use our services in compliance with all applicable laws and
-            regulations.
-          </li>
-          <li>
-            Not engage in any activity that interferes with or disrupts our
-            services.
-          </li>
+          <li>Use the site only for lawful purposes.</li>
+          <li>Not attempt to gain unauthorized access to any part of the site.</li>
+          <li>Respect all intellectual property rights related to the content provided.</li>
         </ul>
       </p>
 
-      <h2 className="padding-top-40 padding-bottom-20">
-        4. Intellectual Property
-      </h2>
+      <h2 className="padding-top-40 padding-bottom-20">3. Intellectual Property</h2>
       <p>
-        All content, including but not limited to text, graphics, logos, images,
-        and software, provided on this website is the property of Code Decoded
-        or its content suppliers and is protected by intellectual property laws.
-        You may not reproduce, distribute, or create derivative works from any
-        content without our express written consent.
+        All content on this website—including text, images, logos, and layout—is
+        the property of Ichiban Sushi and is protected by copyright and trademark
+        laws. You may not reproduce or distribute any part of the website without
+        our prior written consent.
       </p>
 
-      <h2 className="padding-top-40 padding-bottom-20">5. Payment Terms</h2>
+      <h2 className="padding-top-40 padding-bottom-20">4. Third-Party Links</h2>
       <p>
-        The terms of payment for services provided by Code Decoded will be
-        outlined in the separate agreement or project proposal. Unless otherwise
-        agreed, payments are due within 30 days of invoice receipt. Late
-        payments may incur additional fees.
+        Our website may contain links to third-party websites for your convenience
+        (e.g., delivery services or review platforms). Ichiban Sushi is not
+        responsible for the content or practices of those websites.
       </p>
 
-      <h2 className="padding-top-40 padding-bottom-20">6. Termination</h2>
+      <h2 className="padding-top-40 padding-bottom-20">5. Disclaimer</h2>
       <p>
-        Code Decoded reserves the right to terminate or suspend access to our
-        services at any time, without prior notice, for conduct that we believe
-        violates these Terms or is harmful to other users of our services, us,
-        or third parties, or for any other reason at our sole discretion.
+        The information on this website is provided "as is" and without warranties
+        of any kind. While we strive for accuracy, Ichiban Sushi does not guarantee
+        the completeness, reliability, or timeliness of the information provided.
       </p>
 
-      <h2 className="padding-top-40 padding-bottom-20">
-        7. Limitation of Liability
-      </h2>
+      <h2 className="padding-top-40 padding-bottom-20">6. Limitation of Liability</h2>
       <p>
-        To the fullest extent permitted by law, Code Decoded shall not be liable
-        for any indirect, incidental, special, consequential, or punitive
-        damages, or any loss of profits or revenues, whether incurred directly
-        or indirectly, or any loss of data, use, goodwill, or other intangible
-        losses, resulting from:
-        <ul>
-          <li>Your use or inability to use our services.</li>
-          <li>
-            Any unauthorized access to or use of our servers and/or any personal
-            information stored therein.
-          </li>
-          <li>
-            Any bugs, viruses, or the like that may be transmitted to or through
-            our services by any third party.
-          </li>
-        </ul>
+        To the extent permitted by law, Ichiban Sushi shall not be liable for any
+        damages arising out of or related to your use of our website, including but
+        not limited to direct, indirect, incidental, or consequential damages.
       </p>
 
-      <h2 className="padding-top-40 padding-bottom-20">
-        8. Disclaimer of Warranties
-      </h2>
+      <h2 className="padding-top-40 padding-bottom-20">7. Modifications</h2>
       <p>
-        Our services are provided "as is" and "as available" without any
-        warranties of any kind, whether express or implied, including, but not
-        limited to, implied warranties of merchantability, fitness for a
-        particular purpose, or non-infringement. Code Decoded does not warrant
-        that the services will be uninterrupted, error-free, or completely
-        secure.
+        Ichiban Sushi reserves the right to update or modify these Terms at any time
+        without prior notice. Your continued use of the website after changes have
+        been posted indicates your acceptance of the updated Terms.
       </p>
 
-      <h2 className="padding-top-40 padding-bottom-20">
-        9. Changes to the Terms
-      </h2>
+      <h2 className="padding-top-40 padding-bottom-20">8. Contact Us</h2>
       <p>
-        Code Decoded reserves the right to modify these Terms at any time. Any
-        changes will be effective immediately upon posting on our website. Your
-        continued use of our services following the posting of revised Terms
-        means that you accept and agree to the changes.
-      </p>
-
-      <h2 className="padding-top-40 padding-bottom-20">10. Governing Law</h2>
-      <p>
-        These Terms shall be governed by and construed in accordance with the
-        laws of California, without regard to its conflict of law principles.
-        Any legal action or proceeding arising under these Terms will be brought
-        exclusively in the federal or state courts located in California.
-      </p>
-
-      <h2 className="padding-top-40 padding-bottom-20">11. Contact Us:</h2>
-      <p>
-        If you have any questions, concerns, or feedback regarding this Privacy
-        Policy or our data practices, please contact us at{" "}
+        If you have any questions or concerns regarding these Terms, please contact
+        us at{" "}
         <GeneralLink
-          text="codedecodedbiz@gmail.com"
-          url="mailto:codedecodedbiz@gmail.com"
+          text="placeholder@gmail.com"
+          url="mailto:placeholder@gmail.com"
           openInNewTab={false}
         />
         .
       </p>
+
       <p>
-        By using our website and/or services, you acknowledge that you have
-        read, understood, and agree to be bound by these Terms of Service.
+        By using our website, you acknowledge that you have read, understood, and
+        agree to be bound by these Terms of Service.
       </p>
     </div>
   </div>

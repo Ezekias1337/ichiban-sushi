@@ -11,118 +11,101 @@ const PrivacyPolicy = () => (
   <div className="privacy-policy">
     <HelmetProvider>
       <Helmet>
-        <title>Code Decoded | Privacy Policy</title>
+        <title>Ichiban Sushi | Privacy Policy</title>
       </Helmet>
     </HelmetProvider>
-    
+
     <PageHeader title="Privacy Policy" />
     <div className="privacy-policy-wrapper padding-left-and-right">
       <p>
-        At Code Decoded, we are committed to protecting your privacy. This
-        Privacy Policy outlines how we collect, use, and safeguard your
-        information when you visit our website. Information We Collect:
+        At Ichiban Sushi, we are committed to protecting your privacy. This
+        Privacy Policy outlines how we collect, use, and protect your
+        information when you visit our website.
       </p>
 
       <h2 className="padding-top-40 padding-bottom-20">
-        1. Information We Collect:
+        1. Information We Collect
       </h2>
       <p>
-        <strong>a. Personal Information:</strong> We may collect personal
-        information such as your name, email address, phone number, and postal
-        address when you voluntarily provide it to us through forms on our
-        website.
+        <strong>a. Device and Browser Information:</strong> We may collect
+        technical data about your device and browser—such as your IP address,
+        browser type, operating system, and unique device identifiers—to improve
+        your browsing experience and enhance our services.
       </p>
       <p>
-        <strong>b. Device and Browser Information:</strong> We may collect
-        technical information about your device and browser, including but not
-        limited to your IP address, browser type, operating system, and unique
-        device identifiers, to enhance your browsing experience and improve our
-        services.
-      </p>
-      <p>
-        <strong>c. Cookies:</strong> We use cookies to gather information about
+        <strong>b. Cookies:</strong> We use cookies to gather information about
         your interactions with our website, including pages visited, time spent
-        on each page, and other browsing behaviors. These cookies help us
-        personalize your experience, analyze trends, and optimize our website's
-        functionality.
+        on each page, and other browsing behaviors. Cookies help us personalize
+        your experience, analyze trends, and optimize site functionality.
       </p>
 
       <h2 className="padding-top-40 padding-bottom-20">
-        2. How We Use Your Information:
+        2. How We Use Your Information
       </h2>
       <p>
-        <strong>a. Improving User Experience:</strong> We use the information
-        collected to provide, maintain, and improve our website, services, and
-        offerings, ensuring a seamless and personalized user experience.
+        <strong>a. Improving User Experience:</strong> We use collected
+        information to operate, maintain, and enhance our website, services, and
+        overall user experience.
       </p>
       <p>
-        <strong>b. Communication:</strong> We may use your contact information
-        to respond to inquiries, provide customer support, send updates about
-        our services, and communicate important announcements.
-      </p>
-      <p>
-        <strong>c. Analytics:</strong> We analyze website usage data to
-        understand user behavior, preferences, and trends, which helps us
-        enhance our services, tailor content, and make informed business
-        decisions.
+        <strong>b. Analytics:</strong> We analyze website usage data to better
+        understand user behavior and preferences, which helps us tailor content
+        and make informed decisions.
       </p>
 
       <h2 className="padding-top-40 padding-bottom-20">
-        3. Information Sharing and Disclosure:
+        3. Information Sharing and Disclosure
       </h2>
       <p>
         <strong>a. Third-Party Service Providers:</strong> We may share your
-        information with trusted third-party service providers who assist us in
-        operating our website, conducting business activities, or providing
-        services to you. These third parties are contractually obligated to
-        maintain the confidentiality and security of your information.
+        information with trusted third parties who help us operate our website,
+        manage business activities, or provide services to you. These parties
+        are contractually obligated to protect your data.
       </p>
       <p>
         <strong>b. Legal Compliance:</strong> We may disclose your information
-        when required by law, to respond to legal process, or to protect our
-        rights, property, or safety, or that of others.
+        when required by law, legal proceedings, or to protect the rights,
+        property, or safety of Ichiban Sushi or others.
       </p>
 
       <h2 className="padding-top-40 padding-bottom-20">
-        4. Your Choices and Controls:
+        4. Your Choices and Controls
       </h2>
       <p>
-        <strong>a. Cookie Preferences:</strong> You can adjust your browser
-        settings to refuse or delete cookies. However, please note that certain
-        features of our website may not function properly without cookies
-        enabled.
+        <strong>a. Cookie Preferences:</strong> You may adjust your browser
+        settings to refuse or delete cookies. However, some features of our
+        website may not function correctly if cookies are disabled.
       </p>
       <p>
-        <strong>b. Opt-Out:</strong> You have the right to opt out of receiving
-        promotional communications from us. You can unsubscribe from our mailing
-        list by following the instructions included in our emails or by
-        contacting us directly.
+        <strong>b. Opt-Out:</strong> You may opt out of receiving promotional
+        emails from us. To unsubscribe, follow the instructions in our emails or
+        contact us directly.
       </p>
 
-      <h2 className="padding-top-40 padding-bottom-20">5. Data Security:</h2>
+      <h2 className="padding-top-40 padding-bottom-20">5. Data Security</h2>
       <p>
-        We take appropriate measures to safeguard your personal information
-        against unauthorized access, disclosure, alteration, or destruction.
-        However, no method of transmission over the internet or electronic
-        storage is entirely secure, and we cannot guarantee absolute security.
+        We implement reasonable measures to protect your personal information
+        from unauthorized access, disclosure, alteration, or destruction.
+        However, no internet transmission or electronic storage method is 100%
+        secure. While we strive to protect your data, we cannot guarantee
+        absolute security.
       </p>
 
       <h2 className="padding-top-40 padding-bottom-20">
-        6. Updates to this Privacy Policy:
+        6. Updates to this Privacy Policy
       </h2>
       <p>
-        We reserve the right to update, modify, or revise this Privacy Policy at
-        any time. Any changes will be reflected on this page, and we encourage
-        you to review this policy periodically for updates.
+        We may update this Privacy Policy from time to time. Changes will be
+        posted on this page, and we encourage you to review it periodically.
       </p>
 
-      <h2 className="padding-top-40 padding-bottom-20">7. Contact Us:</h2>
+      <h2 className="padding-top-40 padding-bottom-20">7. Contact Us</h2>
       <p>
-        If you have any questions, concerns, or feedback regarding this Privacy
-        Policy or our data practices, please contact us at{" "}
+        If you have any questions or concerns about this Privacy Policy or our
+        data practices, please contact us at{" "}
         <GeneralLink
-          text="codedecodedbiz@gmail.com"
-          url="mailto:codedecodedbiz@gmail.com"
+          text="placeholder@gmail.com"
+          url="mailto:placeholder@gmail.com"
           openInNewTab={false}
         />
         .
