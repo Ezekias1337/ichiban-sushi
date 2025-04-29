@@ -77,13 +77,15 @@ const Footer = () => {
       </div>
       <div className="footer-copywrite-disclaimer-wrapper align-items-center display-flex justify-content-space-between">
         <div className="copywrite-container display-flex">
+          <a href="https://weblordshub.com/" target="_blank">
+            <img
+              src="https://weblordshub.com/assets/logo-5CMEOra5.png"
+              style={{ width: "50px" }}
+            />
+          </a>
           <small className="copywrite-disclaimer">
             © 2025 by WebLord LLC | Created by Code Decoded
           </small>
-          <a href="https://weblordshub.com/" target="_blank">
-            <img src="https://weblordshub.com/assets/logo-5CMEOra5.png" style={{width: "50px"}}/>
-          </a>
-          
         </div>
 
         <div className="footer-bottom-navigation-wrapper display-flex justify-content-right">

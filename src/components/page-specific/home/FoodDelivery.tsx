@@ -14,7 +14,7 @@ const FoodDelivery: React.FC = () => {
           text="Grubhub"
           url="/order"
           buttonSize="large"
-          additionalClassNames="display-flex gap-10"
+          additionalClassNames="display-flex gap-10 justify-content-space-evenly"
           children={
             <svg
               role="img"
@@ -31,7 +31,7 @@ const FoodDelivery: React.FC = () => {
           text="Door Dash"
           url="/order"
           buttonSize="large"
-          additionalClassNames="display-flex gap-10"
+          additionalClassNames="display-flex gap-10 justify-content-space-evenly"
           children={
             <svg
               role="img"
@@ -48,7 +48,7 @@ const FoodDelivery: React.FC = () => {
           text="Uber Eats"
           url="/order"
           buttonSize="large"
-          additionalClassNames="display-flex gap-10"
+          additionalClassNames="display-flex gap-10 justify-content-space-evenly"
           children={
             <svg
               role="img"

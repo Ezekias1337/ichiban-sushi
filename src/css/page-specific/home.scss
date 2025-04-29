@@ -2,13 +2,12 @@
 
 .home-page {
   .hero {
-    background-image: url("../../../../public/assets/images/backgrounds/bar.png");
+    background-image: url("../../../../public/assets/images/backgrounds/inside-restaurant.png");
     background-size: cover;
     background-position-y: center;
     background-repeat: no-repeat;
     min-height: 30vh;
     height: fit-content;
-    background-color: $primary-100;
     
     .hero-text {
         color: $neutral-100;
@@ -34,10 +33,52 @@
     }
     
     .button-wrapper {
+      .button {
+        width: 100%;     
+      }
       svg {
         height: 50px;
         width: 50px;
         fill: $primary-500;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+  
+  .bar-promo {
+    background-image: url("../../../../public/assets/images/backgrounds/bar.png");
+    background-size: cover;
+    background-position-y: 60%;
+    background-repeat: no-repeat;
+    //min-height: 30vh;
+    height: fit-content;
+    grid-template-columns: 1fr 2fr;
+    
+    .bar-promo-text {
+      color: $neutral-100;
+    }
+    
+    .alcohol-and-appetizer-image-wrapper {
+      img {
+        width: 33%;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 40px;
+      
+      .alcohol-and-appetizer-image-wrapper {
+        width: 100%;
+        flex-wrap: wrap;
+        
+        img {
+          width: 50%;
+        }
       }
     }
   }

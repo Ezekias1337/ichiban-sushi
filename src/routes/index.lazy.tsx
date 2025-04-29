@@ -4,7 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 // Components
 import Hero from "../components/page-specific/home/Hero";
 import FoodDelivery from "../components/page-specific/home/FoodDelivery";
-
+import BarPromo from "../components/page-specific/home/BarPromo";
 // CSS
 import "../css/page-specific/home.scss";
 
@@ -18,6 +18,7 @@ const Index = () => (
 
     <Hero />
     <FoodDelivery />
+    <BarPromo />
   </div>
 );
 
