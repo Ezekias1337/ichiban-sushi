@@ -12,9 +12,9 @@ const BarPromo: React.FC = () => {
         </h2>
       </div>
       <div className="alcohol-and-appetizer-image-wrapper full-flex gap-10">
-        <img src={SushiImage3} />
-        <img src={SushiImage} />
-        <img src={SushiImage2} />
+        <img src={SushiImage3} alt="sushi" />
+        <img src={SushiImage} alt="sushi" />
+        <img src={SushiImage2} alt="sushi" />
       </div>
     </section>
   );

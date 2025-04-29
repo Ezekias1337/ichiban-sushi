@@ -3,7 +3,7 @@
 .customer-review {
   border: 1.5px solid $primary-500;
   border-radius: $border-radius;
-  background: $neutral-800;
+  background: $neutral-100;
   flex-shrink: 0;
   position: relative;
   align-self: stretch;
@@ -35,12 +35,12 @@
   .rating-number-and-star-container {
     display: flex;
     margin-left: 6px;
-    color: $primary-300;
+    color: $primary-500;
     padding-top: 10px;
     margin-left: 10px;
   }
 
   .review-body-container {
-    color: $primary-200;
+    color: $primary-400;
   }
 }
