@@ -89,5 +89,38 @@
       grid-template-columns: 1fr 1fr 1fr;
       gap: 20px;
     }
+    
+    @media screen and (max-width: 768px) {
+      .reviews-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+
+  .our-menu {
+    background-color: $neutral-100;
+
+    .menu-wrapper {
+      flex-direction: row;
+    }
+    
+    .menu-items {
+      width: 50%;
+      grid-template-columns: 1fr 1fr;
+    }
+    
+    .menu-rows {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu-items, .menu-rows {
+        width: 100%;
+      }
+      
+      .menu-wrapper {
+        flex-direction: column;
+      }
+    }
   }
 }
