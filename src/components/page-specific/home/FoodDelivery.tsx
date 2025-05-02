@@ -1,3 +1,5 @@
+// Hooks
+import useInView from "../../../hooks/useInView";
 // Components
 import { Button } from "../../button/Button";
 import DecorativeImage from "../../general-page-layout/decorative-image/DecorativeImage";
@@ -6,6 +8,17 @@ import CherryBlossom from "../../../assets/items/cherry-blossom.png";
 import SantokuKnife from "../../../assets/items/santoku-knife.png";
 
 const FoodDelivery: React.FC = () => {
+  const isTextInView = useInView(".food-delivery-text");
+  const firstButtonInView = useInView(
+    ".button-wrapper a.primary-button:nth-child(1)"
+  );
+  const secondButtonInView = useInView(
+    ".button-wrapper a.primary-button:nth-child(2)"
+  );
+  const thirdButtonInView = useInView(
+    ".button-wrapper a.primary-button:nth-child(3)"
+  );
+
   return (
     <section className="food-delivery padding-left-and-right padding-top-80 padding-bottom-80 display-grid">
       <DecorativeImage
@@ -19,7 +32,9 @@ const FoodDelivery: React.FC = () => {
         position="bottom-right"
       />
 
-      <div className="food-delivery-text">
+      <div
+        className={`food-delivery-text${isTextInView ? " food-delivery-text-animated" : ""}`}
+      >
         <h2 className="padding-bottom-20">Food Delivery</h2>
         <h4>Order your food online and have it delivered to your door</h4>
       </div>
@@ -29,7 +44,7 @@ const FoodDelivery: React.FC = () => {
           text="Door Dash"
           url="https://www.doordash.com/store/ichiban-sushi-&-asian--cuisine-greer-32195177/49963352/?cursor=eyJzZWFyY2hfaXRlbV9jYXJvdXNlbF9jdXJzb3IiOnsicXVlcnkiOiJJY2hpYmFuIiwiaXRlbV9pZHMiOltdLCJzZWFyY2hfdGVybSI6ImljaGliYW4iLCJ2ZXJ0aWNhbF9pZCI6LTk5OSwidmVydGljYWxfbmFtZSI6ImFsbCJ9LCJzdG9yZV9wcmltYXJ5X3ZlcnRpY2FsX2lkcyI6WzEsNF19&pickup=false"
           buttonSize="large"
-          additionalClassNames="display-flex gap-10 justify-content-space-evenly"
+          additionalClassNames={`display-flex gap-10 justify-content-space-evenly ${firstButtonInView ? " fade-in-button" : ""}`}
           children={
             <svg
               role="img"
@@ -46,7 +61,7 @@ const FoodDelivery: React.FC = () => {
           text="Grubhub"
           url="/order"
           buttonSize="large"
-          additionalClassNames="display-flex gap-10 justify-content-space-evenly"
+          additionalClassNames={`display-flex gap-10 justify-content-space-evenly ${secondButtonInView ? " fade-in-button" : ""}`}
           children={
             <svg
               role="img"
@@ -64,7 +79,7 @@ const FoodDelivery: React.FC = () => {
           text="Uber Eats"
           url="/order"
           buttonSize="large"
-          additionalClassNames="display-flex gap-10 justify-content-space-evenly"
+          additionalClassNames={`display-flex gap-10 justify-content-space-evenly ${thirdButtonInView ? " fade-in-button" : ""}`}
           children={
             <svg
               role="img"
