@@ -1,0 +1,22 @@
+@use "../../css/variables" as *;
+
+.about-us {
+  background-color: $neutral-100;
+
+  background-image: url("../../assets/backgrounds/bar.png");
+  background-size: cover;
+  background-position-y: 60%;
+  background-repeat: no-repeat;
+  height: fit-content;
+  
+  .page-title {
+    color: $neutral-100;
+  }
+  
+  .about-us-text {
+    color: $neutral-100;
+    p {
+      font-size: $header-5;
+    }
+  }
+}

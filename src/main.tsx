@@ -1,7 +1,11 @@
 // Library Imports
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider, createRouter } from "@tanstack/react-router";
+import {
+  RouterProvider,
+  createRouter,
+  createBrowserHistory,
+} from "@tanstack/react-router";
 // CSS
 import "./css/styles.scss";
 
@@ -11,10 +15,17 @@ import { routeTree } from "./routeTree.gen";
 //404 Page
 import PageNotFound from "./routes/page-not-found.lazy";
 
+const URL_BASE = import.meta.env.VITE_ROUTING_URL_BASE;
+
+const browserHistory = createBrowserHistory({
+  basepath: URL_BASE,
+});
+
 // Create a new router instance
 const router = createRouter({
   routeTree,
   defaultNotFoundComponent: PageNotFound,
+  history: browserHistory,
 });
 
 // Register the router instance for type safety
