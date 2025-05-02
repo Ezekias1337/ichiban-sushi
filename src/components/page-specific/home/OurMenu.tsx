@@ -42,22 +42,22 @@ const OurMenu: React.FC = () => {
 
   const menuRows: MenuRowProps[] = [
     {
-      title: "Soup",
+      title: "Soups",
       description:
         "Warm and comforting traditional Japanese soups, crafted with rich broths and delicate flavors to start your meal right.",
     },
     {
-      title: "Salad",
+      title: "Salads",
       description:
         "Fresh and vibrant salads featuring crisp greens, seasonal vegetables, and unique Japanese dressings.",
     },
     {
-      title: "Appetizer",
+      title: "Appetizers",
       description:
         "Shareable small plates and savory bites — perfect for awakening your palate before the main course.",
     },
     {
-      title: "Sushi Roll",
+      title: "Sushi Rolls",
       description:
         "Classic and creative maki rolls, wrapped with premium ingredients and masterfully balanced flavor",
     },
@@ -67,7 +67,7 @@ const OurMenu: React.FC = () => {
         "Expertly sliced raw fish served as nigiri (with rice) or sashimi (without), showcasing the purity and quality of each cut.",
     },
     {
-      title: " Signature Roll",
+      title: " Signature Rolls",
       description:
         "Ichiban’s house specialties — bold, inventive rolls that blend traditional techniques with modern flair.",
     },

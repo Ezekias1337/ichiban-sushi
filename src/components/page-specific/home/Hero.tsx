@@ -10,32 +10,41 @@ import InsideRestaurantImg from "../../../assets/backgrounds/inside-restaurant.p
 import CherryBlossomWallImg from "../../../assets/backgrounds/cherry-blossom-wall.png";
 
 const Hero: React.FC = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMounted, setIsMounted] = useState(false);
   const heroImages = useMemo(
     () => [InsideRestaurantImg, BarImg, CherryBlossomWallImg],
     []
   );
-  const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Preload images
   useEffect(() => {
     preloadImages(heroImages);
   }, [heroImages]);
 
+  // Delay initial activation to trigger animation
   useEffect(() => {
+    const mountTimeout = setTimeout(() => {
+      setIsMounted(true);
+    }, 50); // Wait for next frame
+
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev + 1) % heroImages.length);
     }, 5000);
-    return () => clearInterval(interval);
-  }, [heroImages]);
+
+    return () => {
+      clearTimeout(mountTimeout);
+      clearInterval(interval);
+    };
+  }, [heroImages.length]);
 
   return (
-    <section
-      className={`hero padding-left-and-right padding-top-80 padding-bottom-80 display-flex align-items-center`}
-    >
+    <section className="hero padding-left-and-right padding-top-80 padding-bottom-80 dark-image-overlay-600 display-flex align-items-center">
       {heroImages.map((image, index) => (
         <div
           key={index}
           className={`hero-background ${
-            index === currentIndex ? "active" : ""
+            index === currentIndex && isMounted ? "active" : ""
           }`}
           style={{ backgroundImage: `url(${image})` }}
         />

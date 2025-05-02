@@ -1,7 +1,11 @@
 @use "../../../../css/variables" as *;
 
 .menu-row-hr {
-  border-top: 2px dashed $primary-800;
+  border-top: 2px dashed $primary-900;
   width: 100%;
   border-bottom: none;
+}
+
+.menu-row-container {
+  color: $primary-900;
 }
