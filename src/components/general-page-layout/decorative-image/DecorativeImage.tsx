@@ -1,5 +1,7 @@
 // Library Imports
 import { FC } from "react";
+// Hooks
+import useIntersectionAnimation from "../../../hooks/useIntersectionAnimation";
 // CSS
 import "./decorative-image.scss";
 
@@ -20,8 +22,21 @@ const DecorativeImage: FC<DecorativeImageProps> = ({
   imgAlt,
   position,
 }) => {
+  const ref = useIntersectionAnimation((el) => {
+    el.style.animationName =
+      position === "top-left" ||
+      position === "top-right" ||
+      position === "center-left"
+        ? "drop-in"
+        : "rise-up";
+    el.style.animationPlayState = "running";
+  });
+
   return (
-    <div className={`decoration-image-container ${position}-decoration`}>
+    <div
+      ref={ref}
+      className={`decoration-image-container ${position}-decoration`}
+    >
       <img src={imgSrc} alt={imgAlt} />
     </div>
   );
