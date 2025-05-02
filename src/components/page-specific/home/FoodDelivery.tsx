@@ -1,5 +1,6 @@
 // Components
 import { Button } from "../../button/Button";
+import DecorativeImage from "../../general-page-layout/decorative-image/DecorativeImage";
 // Assets
 import CherryBlossom from "../../../assets/items/cherry-blossom.png";
 import SantokuKnife from "../../../assets/items/santoku-knife.png";
@@ -7,13 +8,16 @@ import SantokuKnife from "../../../assets/items/santoku-knife.png";
 const FoodDelivery: React.FC = () => {
   return (
     <section className="food-delivery padding-left-and-right padding-top-80 padding-bottom-80 display-grid">
-      <div className="decoration-image-container">
-        <img src={CherryBlossom} alt="cherry-blossom" />
-      </div>
-      <div className="decoration-image-container">
-        <img src={SantokuKnife} alt="Santoku Knife" />
-      </div>
-      
+      <DecorativeImage
+        imgSrc={CherryBlossom}
+        imgAlt="cherry-blossom"
+        position="top-left"
+      />
+      <DecorativeImage
+        imgSrc={SantokuKnife}
+        imgAlt="Santoku Knife"
+        position="bottom-right"
+      />
 
       <div className="food-delivery-text">
         <h2 className="padding-bottom-20">Food Delivery</h2>

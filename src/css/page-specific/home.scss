@@ -2,32 +2,6 @@
 @use "../../css/animations" as *;
 
 .home-page {
-  .decoration-image-container {
-    width: 12rem;
-    position: absolute;
-    top: 0;
-    left: -20px;
-    animation-name: drop-in;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    opacity: 0;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      opacity: 0.6;
-      pointer-events: none;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .decoration-image-container {
-      width: 6rem;
-    }
-  }
-
   .hero {
     position: relative;
     overflow: hidden;
@@ -103,18 +77,6 @@
     grid-template-columns: 1fr 2fr;
     position: relative;
 
-    .decoration-image-container:first-of-type {
-      top: 120px;
-      animation-delay: 0.5s;
-    }
-
-    .decoration-image-container:nth-of-type(2) {
-      left: auto;
-      right: -40px;
-      top: -30px;
-      animation-delay: 1s;
-    }
-
     .food-delivery-text {
       color: $primary-900;
     }
@@ -133,18 +95,6 @@
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;
       gap: 40px;
-
-      .decoration-image-container:first-of-type {
-        top: 535px;
-        animation-delay: 0.5s;
-      }
-
-      .decoration-image-container:nth-of-type(2) {
-        left: auto;
-        right: -10px;
-        top: -5px;
-        animation-delay: 1s;
-      }
     }
   }
 
@@ -184,20 +134,6 @@
   .our-reviews {
     background-color: $primary-100;
 
-    .decoration-image-container:first-of-type {
-      top: 0%;
-    }
-
-    .decoration-image-container:nth-of-type(2) {
-      left: auto;
-      right: -40px;
-      top: 40%
-    }
-
-    .decoration-image-container:nth-of-type(3) {
-      top: 80%;
-    }
-
     .reviews-wrapper {
       grid-template-columns: 1fr 1fr 1fr;
       gap: 20px;
@@ -213,20 +149,6 @@
       .customer-review:nth-of-type(3) {
         display: none;
       }
-
-      .decoration-image-container:first-of-type {
-        top: 170px;
-      }
-
-      .decoration-image-container:nth-of-type(2) {
-        left: auto;
-        right: -40px;
-        top: 700px;
-      }
-
-      .decoration-image-container:nth-of-type(3) {
-        top: 1200px;
-      }
     }
   }
 
@@ -235,26 +157,6 @@
 
     .page-title {
       color: $primary-900;
-    }
-
-    .decoration-image-container:first-of-type {
-      top: 50px;
-    }
-
-    .decoration-image-container:nth-of-type(2) {
-      left: auto;
-      right: -40px;
-      top: 500px;
-    }
-
-    .decoration-image-container:nth-of-type(3) {
-      top: 1150px;
-      right: -40px;
-      transform: scaleX(-1);
-      -webkit-transform: scaleX(-1);
-      -moz-transform: scaleX(-1);
-      -ms-transform: scaleX(-1);
-      -o-transform: scaleX(-1);
     }
 
     .menu-wrapper {
@@ -278,21 +180,6 @@
 
       .menu-wrapper {
         flex-direction: column;
-      }
-
-      .decoration-image-container:first-of-type {
-        left: auto;
-        right: -40px;
-        top: 1200px;
-      }
-
-      .decoration-image-container:nth-of-type(2) {
-        top: 170px;
-        left: 10px;
-      }
-
-      .decoration-image-container:nth-of-type(3) {
-        top: 1990px;
       }
     }
   }

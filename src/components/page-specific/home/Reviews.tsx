@@ -1,5 +1,6 @@
 // Components
 import { CustomerReview } from "../../customer-review/customerReview";
+import DecorativeImage from "../../general-page-layout/decorative-image/DecorativeImage";
 // Types
 import { CustomerReviewProps } from "../../customer-review/customerReview";
 // Assets
@@ -37,8 +38,7 @@ const Reviews: React.FC = () => {
       authorName: "Bell",
       rating: 5,
       reviewBody: `I just had the BEST vegetarian ramen from this place! The restaurant is pretty big with enough parking. There is of course, a large sushi selection, but the vegetarian ramen was so flavorful and perfect. I was completely taken aback!
-
-My friend got the mango tango sushi and it was also pretty good. I would highly recommend Ichiban Sushi for some good Japanese food in Greer!`,
+        My friend got the mango tango sushi and it was also pretty good. I would highly recommend Ichiban Sushi for some good Japanese food in Greer!`,
     },
     {
       authorImage: Review4,
@@ -66,15 +66,17 @@ My friend got the mango tango sushi and it was also pretty good. I would highly 
     <section className="our-reviews padding-left-and-right padding-top-80 padding-bottom-80 position-relative">
       <h2 className="page-title">Our Reviews</h2>
 
-      <div className="decoration-image-container">
-        <img src={Sake} alt="Sake Bottle" />
-      </div>
-      <div className="decoration-image-container">
-        <img src={Handfan1} alt="Handfan" />
-      </div>
-      <div className="decoration-image-container">
-        <img src={BonzaiTree} alt="Bonzai Tree" />
-      </div>
+      <DecorativeImage imgSrc={Sake} imgAlt="Sake Bottle" position="top-right" />
+      <DecorativeImage
+        imgSrc={Handfan1}
+        imgAlt="Handfan"
+        position="center-left"
+      />
+      <DecorativeImage
+        imgSrc={BonzaiTree}
+        imgAlt="Bonzai Tree"
+        position="bottom-right"
+      />
 
       <div className="reviews-wrapper display-grid">
         {reviews.map((review) => {

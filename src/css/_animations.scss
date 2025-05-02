@@ -16,6 +16,15 @@
   }
   to {
     opacity: 1;
-    //top: 0px;
+  }
+}
+
+@keyframes rise-up {
+  from {
+    opacity: 0;
+    bottom: -100px;
+  }
+  to {
+    opacity: 1;
   }
 }

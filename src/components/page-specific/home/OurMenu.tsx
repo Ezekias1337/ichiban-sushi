@@ -1,6 +1,7 @@
 // Components
 import MenuCard from "./menu-card/MenuCard";
 import MenuRow from "./menu-row/MenuRow";
+import DecorativeImage from "../../general-page-layout/decorative-image/DecorativeImage";
 // Types
 import { MenuCardProps } from "./menu-card/MenuCard";
 import { MenuRowProps } from "./menu-row/MenuRow";
@@ -81,15 +82,17 @@ const OurMenu: React.FC = () => {
     <section className="our-menu padding-left-and-right padding-top-80 padding-bottom-80 position-relative">
       <h2 className="page-title">Food & Drinks</h2>
 
-      <div className="decoration-image-container">
-        <img src={BowlOfRice} alt="Bowl of Rice" />
-      </div>
-      <div className="decoration-image-container">
-        <img src={Teapot} alt="Teapot" />
-      </div>
-      <div className="decoration-image-container">
-        <img src={SamuraiSword} alt="Handfan" />
-      </div>
+      <DecorativeImage
+        imgSrc={BowlOfRice}
+        imgAlt="Bowl of Rice"
+        position="top-left"
+      />
+      <DecorativeImage imgSrc={Teapot} imgAlt="Teapot" position="center-right" />
+      <DecorativeImage
+        imgSrc={SamuraiSword}
+        imgAlt="Handfan"
+        position="bottom-left"
+      />
 
       <div className="menu-wrapper full-flex gap-40">
         <div className="menu-items display-grid gap-20">

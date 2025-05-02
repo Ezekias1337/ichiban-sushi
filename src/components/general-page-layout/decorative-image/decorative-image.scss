@@ -1,0 +1,82 @@
+.decoration-image-container {
+  width: 12rem;
+  position: absolute;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  &.top-left-decoration {
+    top: 0%;
+    left: -20px;
+    animation-name: drop-in;
+  }
+
+  &.top-right-decoration {
+    top: 0%;
+    right: -20px;
+    animation-name: drop-in;
+  }
+
+  &.center-left-decoration {
+    top: 50%;
+    left: -20px;
+    animation-name: drop-in;
+  }
+
+  &.center-right-decoration {
+    top: 50%;
+    right: -20px;
+    animation-name: drop-in;
+  }
+
+  &.bottom-left-decoration {
+    bottom: 0;
+    left: -20px;
+    animation-name: rise-up;
+  }
+
+  &.bottom-right-decoration {
+    bottom: 0;
+    right: -20px;
+    animation-name: rise-up;
+  }
+}
+
+.decoration-image-container:first-of-type {
+  animation-delay: 0.5s;
+}
+
+.decoration-image-container:nth-of-type(2) {
+  animation-delay: 1s;
+}
+
+.decoration-image-container:nth-of-type(3) {
+  animation-delay: 1.5s;
+}
+
+.decoration-image-container:nth-of-type(4) {
+  animation-delay: 2s;
+}
+
+.decoration-image-container:nth-of-type(5) {
+  animation-delay: 2.5s;
+}
+
+.decoration-image-container:nth-of-type(6) {
+  animation-delay: 3s;
+}
+
+@media screen and (max-width: 768px) {
+  .decoration-image-container {
+    width: 6rem;
+  }
+}
