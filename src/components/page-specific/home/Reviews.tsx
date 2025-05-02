@@ -29,11 +29,19 @@ const Reviews: React.FC = () => {
         I will definitely be returning. It’s so convenient that it’s so close to home!`,
     },
     {
+      authorImage: Review5,
+      authorName: "Bell",
+      rating: 5,
+      reviewBody: `I just had the BEST vegetarian ramen from this place! The restaurant is pretty big with enough parking. There is of course, a large sushi selection, but the vegetarian ramen was so flavorful and perfect. I was completely taken aback!
+
+My friend got the mango tango sushi and it was also pretty good. I would highly recommend Ichiban Sushi for some good Japanese food in Greer!`,
+    },
+    {
       authorImage: Review4,
       authorName: "Ed Goretoy",
       rating: 5,
       reviewBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "I've been to a lot of sushi places in my area places for an affordable price. My wife and I absolutely love this location, great sushi rolls, and really quick service.",
     },
     {
       authorImage: Review3,
@@ -41,12 +49,7 @@ const Reviews: React.FC = () => {
       rating: 5,
       reviewBody: `5+ Stars! We drove 45 minutes for this goodness and will be back. Give yourself plenty of time, if it's your first visit, to experience and indulge. The service was spectacular and the food... Yummmmmmy 🤤 (be careful to not waste food) 😜`,
     },
-    {
-      authorImage: Review5,
-      authorName: "Earl",
-      rating: 5,
-      reviewBody: `The all you can eat sushi and bento boxes are awesome! We liked it a lot. The choices on the all you can eat menu include appetizers, desserts, and countless sushi options. I have been twice and loved it both times. I highly recommend giving it a try. You won’t be disappointed.`,
-    },
+
     {
       authorImage: Review6,
       authorName: "Paul Patelis",

@@ -30,7 +30,7 @@ export const CustomerReview: FC<CustomerReviewProps> = ({
           </div>
         </div>
       </div>
-      <div className="review-body-container">
+      <div className="review-body-container padding-top-20">
         <p>{reviewBody}</p>
       </div>
     </div>
