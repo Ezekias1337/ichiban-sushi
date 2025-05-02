@@ -40,7 +40,7 @@ const FoodDelivery: React.FC = () => {
         <Button
           variant="primary"
           text="Grubhub"
-          url=""
+          url="/order"
           buttonSize="large"
           additionalClassNames="display-flex gap-10 justify-content-space-evenly"
           children={

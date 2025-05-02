@@ -1,6 +1,33 @@
 @use "../../css/variables" as *;
+@use "../../css/animations" as *;
 
 .home-page {
+  .decoration-image-container {
+    width: 12rem;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    animation-name: drop-in;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .decoration-image-container {
+      width: 6rem;
+    }
+  }
+
   .hero {
     position: relative;
     overflow: hidden;
@@ -61,6 +88,9 @@
       align-items: flex-start;
       height: 100%;
       gap: 40px;
+      animation-name: fade-in;
+      animation-timing-function: ease-in;
+      animation-duration: 1s;
     }
 
     .hero-text {
@@ -73,27 +103,16 @@
     grid-template-columns: 1fr 2fr;
     position: relative;
 
-    .decoration-image-container {
-      width: 12rem;
-      position: absolute;
-      top: 0;
-      left: -20px;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-
     .decoration-image-container:first-of-type {
       top: 120px;
+      animation-delay: 0.5s;
     }
 
     .decoration-image-container:nth-of-type(2) {
       left: auto;
       right: -40px;
       top: -30px;
+      animation-delay: 1s;
     }
 
     .food-delivery-text {
@@ -114,6 +133,18 @@
     @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;
       gap: 40px;
+
+      .decoration-image-container:first-of-type {
+        top: 535px;
+        animation-delay: 0.5s;
+      }
+
+      .decoration-image-container:nth-of-type(2) {
+        left: auto;
+        right: -10px;
+        top: -5px;
+        animation-delay: 1s;
+      }
     }
   }
 
@@ -153,30 +184,18 @@
   .our-reviews {
     background-color: $primary-100;
 
-    .decoration-image-container {
-      width: 12rem;
-      position: absolute;
-      right: auto;
-      left: -20px;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-
     .decoration-image-container:first-of-type {
-      top: 50px;
+      top: 0%;
     }
 
     .decoration-image-container:nth-of-type(2) {
       left: auto;
       right: -40px;
+      top: 40%
     }
 
     .decoration-image-container:nth-of-type(3) {
-      top: 600px;
+      top: 80%;
     }
 
     .reviews-wrapper {
@@ -188,6 +207,26 @@
       .reviews-wrapper {
         grid-template-columns: 1fr;
       }
+
+      .customer-review:nth-of-type(1),
+      .customer-review:nth-of-type(2),
+      .customer-review:nth-of-type(3) {
+        display: none;
+      }
+
+      .decoration-image-container:first-of-type {
+        top: 170px;
+      }
+
+      .decoration-image-container:nth-of-type(2) {
+        left: auto;
+        right: -40px;
+        top: 700px;
+      }
+
+      .decoration-image-container:nth-of-type(3) {
+        top: 1200px;
+      }
     }
   }
 
@@ -196,19 +235,6 @@
 
     .page-title {
       color: $primary-900;
-    }
-
-    .decoration-image-container {
-      width: 12rem;
-      position: absolute;
-      right: auto;
-      left: -20px;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
     }
 
     .decoration-image-container:first-of-type {
@@ -222,14 +248,14 @@
     }
 
     .decoration-image-container:nth-of-type(3) {
-      bottom: -50px;
+      top: 1150px;
       right: -40px;
       transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
       -moz-transform: scaleX(-1);
       -ms-transform: scaleX(-1);
       -o-transform: scaleX(-1);
-}
+    }
 
     .menu-wrapper {
       flex-direction: row;
@@ -252,6 +278,21 @@
 
       .menu-wrapper {
         flex-direction: column;
+      }
+
+      .decoration-image-container:first-of-type {
+        left: auto;
+        right: -40px;
+        top: 1200px;
+      }
+
+      .decoration-image-container:nth-of-type(2) {
+        top: 170px;
+        left: 10px;
+      }
+
+      .decoration-image-container:nth-of-type(3) {
+        top: 1990px;
       }
     }
   }
