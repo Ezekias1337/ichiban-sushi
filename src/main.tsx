@@ -15,10 +15,10 @@ import { routeTree } from "./routeTree.gen";
 //404 Page
 import PageNotFound from "./routes/page-not-found.lazy";
 
-const URL_BASE = import.meta.env.VITE_ROUTING_URL_BASE;
+//const URL_BASE = import.meta.env.VITE_ROUTING_URL_BASE;
 
 const browserHistory = createBrowserHistory({
-  basepath: URL_BASE,
+  basepath: "/ichiban-sushi",
 });
 
 // Create a new router instance
