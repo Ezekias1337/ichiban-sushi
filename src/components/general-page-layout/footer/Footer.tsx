@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
 
         <div className="social-col display-flex">
-          <FooterSocialIcon icon={faInstagram} url="" />
+          <FooterSocialIcon icon={faInstagram} url="https://www.instagram.com/ichiban_sushi_all_you_can_eat/" />
           <FooterSocialIcon icon={faFacebook} url="" />
           <FooterSocialIcon icon={faXTwitter} url="" />
         </div>

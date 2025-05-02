@@ -10,6 +10,10 @@ import Review4 from "../../../assets/reviews/review-4.png";
 import Review5 from "../../../assets/reviews/review-5.png";
 import Review6 from "../../../assets/reviews/review-6.png";
 
+import Handfan1 from "../../../assets/items/handfan-1.png";
+import Sake from "../../../assets/items/sake.png";
+import BonzaiTree from "../../../assets/items/bonzai-tree.png";
+
 const Reviews: React.FC = () => {
   const reviews: CustomerReviewProps[] = [
     {
@@ -59,8 +63,18 @@ My friend got the mango tango sushi and it was also pretty good. I would highly 
   ];
 
   return (
-    <section className="our-reviews padding-left-and-right padding-top-80 padding-bottom-80">
+    <section className="our-reviews padding-left-and-right padding-top-80 padding-bottom-80 position-relative">
       <h2 className="page-title">Our Reviews</h2>
+
+      <div className="decoration-image-container">
+        <img src={Sake} alt="Sake Bottle" />
+      </div>
+      <div className="decoration-image-container">
+        <img src={Handfan1} alt="Handfan" />
+      </div>
+      <div className="decoration-image-container">
+        <img src={BonzaiTree} alt="Bonzai Tree" />
+      </div>
 
       <div className="reviews-wrapper display-grid">
         {reviews.map((review) => {

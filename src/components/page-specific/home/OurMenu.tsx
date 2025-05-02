@@ -12,6 +12,10 @@ import SushiRollImage from "../../../assets/menu/sushi-roll.png";
 import NigiriImage from "../../../assets/menu/ngiri.png";
 import SignatureRollImage from "../../../assets/menu/signature-roll.png";
 
+import Teapot from "../../../assets/items/teapot.png";
+import SamuraiSword from "../../../assets/items/samurai-sword-1.png";
+import BowlOfRice from "../../../assets/items/bowl-of-rice.png";
+
 const OurMenu: React.FC = () => {
   const menuCards: MenuCardProps[] = [
     {
@@ -74,8 +78,18 @@ const OurMenu: React.FC = () => {
   ];
 
   return (
-    <section className="our-menu padding-left-and-right padding-top-80 padding-bottom-80">
+    <section className="our-menu padding-left-and-right padding-top-80 padding-bottom-80 position-relative">
       <h2 className="page-title">Food & Drinks</h2>
+
+      <div className="decoration-image-container">
+        <img src={BowlOfRice} alt="Bowl of Rice" />
+      </div>
+      <div className="decoration-image-container">
+        <img src={Teapot} alt="Teapot" />
+      </div>
+      <div className="decoration-image-container">
+        <img src={SamuraiSword} alt="Handfan" />
+      </div>
 
       <div className="menu-wrapper full-flex gap-40">
         <div className="menu-items display-grid gap-20">
