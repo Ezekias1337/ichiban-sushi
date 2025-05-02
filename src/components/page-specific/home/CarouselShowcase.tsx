@@ -1,15 +1,26 @@
 // Components
 import ImageCarousel from "./image-carousel/ImageCarousel";
 // Assets
-import SushiImage from "../../../assets/items/sushi-5.png";
-import SushiImage2 from "../../../assets/items/sushi-6.png";
-import SushiImage3 from "../../../assets/items/sushi-8.png";
-
+import EdamameImg from "../../../assets/menu/edamame.png";
+import NgiriImg from "../../../assets/menu/ngiri.png";
+import SaladImg from "../../../assets/menu/salad.png";
+import SignatureRollImg from "../../../assets/menu/signature-roll.png";
+import SoupImg from "../../../assets/menu/soup.png";
+import SushiRoll from "../../../assets/menu/sushi-roll.png";
 
 const CarouselShowcase: React.FC = () => {
   return (
     <section className="carousel-showcase">
-      <ImageCarousel imgs={[SushiImage, SushiImage2, SushiImage3]} />
+      <ImageCarousel
+        imgs={[
+          EdamameImg,
+          NgiriImg,
+          SaladImg,
+          SignatureRollImg,
+          SoupImg,
+          SushiRoll,
+        ]}
+      />
     </section>
   );
 };

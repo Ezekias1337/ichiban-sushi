@@ -60,20 +60,7 @@ const Footer = () => {
             <FooterLink linkText="FAQ" url="/faqs" openInNewTab={false} />
           </div>
         </div>
-        <div className="footer-navigation-column">
-          <h5 className="footer-navigation-header bold-text full-flex">
-            Other
-          </h5>
 
-          <div className="footer-link-column display-flex">
-            <FooterLink
-              linkText="Request Consultation"
-              url="/contact-us"
-              openInNewTab={false}
-            />
-            <FooterLink linkText="Login" url="/login" openInNewTab={false} />
-          </div>
-        </div>
       </div>
       <div className="footer-copywrite-disclaimer-wrapper align-items-center display-flex justify-content-space-between">
         <div className="copywrite-container display-flex">

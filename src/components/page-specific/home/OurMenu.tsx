@@ -5,33 +5,38 @@ import MenuRow from "./menu-row/MenuRow";
 import { MenuCardProps } from "./menu-card/MenuCard";
 import { MenuRowProps } from "./menu-row/MenuRow";
 // Assets
-import SushiImage from "../../../assets/items/sushi-5.png";
+import SoupImage from "../../../assets/menu/soup.png";
+import SaladImage from "../../../assets/menu/salad.png";
+import AppetizerImage from "../../../assets/menu/edamame.png";
+import SushiRollImage from "../../../assets/menu/sushi-roll.png";
+import NigiriImage from "../../../assets/menu/ngiri.png";
+import SignatureRollImage from "../../../assets/menu/signature-roll.png";
 
 const OurMenu: React.FC = () => {
   const menuCards: MenuCardProps[] = [
     {
-      imgSrc: SushiImage,
-      text: "Soup",
+      imgSrc: SoupImage,
+      text: "Soups",
     },
     {
-      imgSrc: SushiImage,
-      text: "Salad",
+      imgSrc: SaladImage,
+      text: "Salads",
     },
     {
-      imgSrc: SushiImage,
-      text: "Appetizer",
+      imgSrc: AppetizerImage,
+      text: "Appetizers",
     },
     {
-      imgSrc: SushiImage,
-      text: "Sushi Roll",
+      imgSrc: SushiRollImage,
+      text: "Sushi Rolls",
     },
     {
-      imgSrc: SushiImage,
+      imgSrc: NigiriImage,
       text: "Nigiri & Sashimi",
     },
     {
-      imgSrc: SushiImage,
-      text: "Signature Roll",
+      imgSrc: SignatureRollImage,
+      text: "Signature Rolls",
     },
   ];
 
@@ -94,6 +99,7 @@ const OurMenu: React.FC = () => {
                 key={index}
                 title={item.title}
                 description={item.description}
+                isLast={index === menuRows.length - 1}
               />
             );
           })}

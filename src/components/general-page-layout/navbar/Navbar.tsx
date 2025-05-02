@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
           </button>
         )}
       </div>
-      <div className={`navbar-menu${isOpen ? " navbar-menu-open" : ""}`}>
+      <div className={`navbar-menu${isOpen ? " navbar-menu-open" : ""} z-index-2`}>
         <ul className="space-around-flex align-items-center">
           <li>
             <AnimatedNavLink linkText="Home" url="/" />
