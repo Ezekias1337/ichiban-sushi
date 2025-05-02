@@ -6,13 +6,13 @@
   "homepage": "https://ezekias1337.github.io/ichiban-sushi",
   "scripts": {
     "dev": "npm run tsr:generate && vite",
-    "build": "npm install && tsc && vite build",
+    "build": "npm install && tsc",
     "preview": "vite preview",
     "tsr:generate": "npx run tsr generate",
     "clear-cache": "npm cache clean --force",
     "delete-node-modules-and-package-lock": "rm -rf node_modules package-lock.json && npm i registry.npmjs.org",
     "fix-terminal-lag": "npm run clear-cache && npm run delete-node-modules-and-package-lock",
-    "predeploy": "vite build",
+    "predeploy": "VITE_ROUTING_URL_BASE=/ichiban-sushi/ vite build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
