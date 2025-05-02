@@ -16,13 +16,16 @@ const AllYouCanEatPolicy = () => (
     </HelmetProvider>
 
     <PageHeader title="All You Can Eat Policy" />
-    
+
     <div className="all-you-can-eat-policy-explanation">
       <p>
         You must finish your order, including your rice. Any leftovers will be
         charged ($1.00 pc for signature roll and nigiri, $0.50 for regular
-        rolls). Order as many as you like. Please do not share unless the group
-        of guests is all you can eat.
+        rolls).
+      </p>
+      <p className="padding-top-40">
+        Order as many as you like. Please do not share unless the group of
+        guests is all you can eat.
       </p>
     </div>
   </section>
