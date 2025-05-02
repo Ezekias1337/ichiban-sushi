@@ -63,12 +63,14 @@ const Hero: React.FC = () => {
             text="Order Now"
             url="/order"
             buttonSize="large"
+            additionalClassNames="full-flex gap-10 justify-content-space-evenly"
           />
           <Button
             variant="primary-dark"
             text="View Menu"
             url="/order"
             buttonSize="large"
+            additionalClassNames="full-flex gap-10 justify-content-space-evenly"
           />
         </div>
       </div>
