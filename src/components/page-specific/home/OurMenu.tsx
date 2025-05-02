@@ -5,7 +5,7 @@ import MenuRow from "./menu-row/MenuRow";
 import { MenuCardProps } from "./menu-card/MenuCard";
 import { MenuRowProps } from "./menu-row/MenuRow";
 // Assets
-import SushiImage from "../../../../public/assets/images/items/sushi-1.png";
+import SushiImage from "../../../assets/items/sushi-5.png";
 
 const OurMenu: React.FC = () => {
   const menuCards: MenuCardProps[] = [
@@ -77,6 +77,7 @@ const OurMenu: React.FC = () => {
           {menuCards.map((item, index) => {
             return (
               <MenuCard
+                key={index}
                 imgSrc={item.imgSrc}
                 text={item.text}
                 additionalClassNames={
@@ -87,9 +88,13 @@ const OurMenu: React.FC = () => {
           })}
         </div>
         <div className="menu-rows full-flex flex-direction-column gap-20">
-          {menuRows.map((item) => {
+          {menuRows.map((item, index) => {
             return (
-              <MenuRow title={item.title} description={item.description} />
+              <MenuRow
+                key={index}
+                title={item.title}
+                description={item.description}
+              />
             );
           })}
         </div>

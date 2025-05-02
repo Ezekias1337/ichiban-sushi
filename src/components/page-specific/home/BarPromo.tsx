@@ -1,7 +1,6 @@
-import SushiImage from "../../../../public/assets/images/items/sushi-5.png";
-import SushiImage2 from "../../../../public/assets/images/items/sushi-6.png";
-import SushiImage3 from "../../../../public/assets/images/items/sushi-8.png";
-//import AlcoholImage from "../../../assets/images/alcohol.jpg";
+import SushiImage from "../../../assets/items/sushi-5.png";
+import SushiImage2 from "../../../assets/items/sushi-6.png";
+import SushiImage3 from "../../../assets/items/sushi-8.png";
 
 const BarPromo: React.FC = () => {
   return (

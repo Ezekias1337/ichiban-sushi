@@ -18,7 +18,7 @@ const MenuCard: React.FC<MenuCardProps> = ({
     >
       <h5 className="menu-card-title z-index-2">{text}</h5>
       <img src={imgSrc} alt={text} className="z-index-1" />
-      <div className="menu-card-overlay dark-image-overlay-300"></div>
+      <div className="menu-card-overlay dark-image-overlay-200"></div>
     </div>
   );
 };

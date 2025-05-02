@@ -3,7 +3,7 @@ import { CustomerReview } from "../../customer-review/customerReview";
 // Types
 import { CustomerReviewProps } from "../../customer-review/customerReview";
 // Assets
-import SushiImage from "../../../../public/assets/images/items/sushi-5.png";
+import SushiImage from "../../../assets/items/sushi-5.png";
 
 
 const Reviews: React.FC = () => {

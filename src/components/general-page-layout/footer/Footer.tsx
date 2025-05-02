@@ -10,7 +10,7 @@ import { FooterSocialIcon } from "./dependents/FooterSocialIcon";
 // CSS
 import "./footer.scss";
 // Assets and Images
-import logo from "/assets/images/logo/logo.webp";
+import logo from "../../../assets/logo/logo.webp";
 import { Link } from "@tanstack/react-router";
 
 const Footer = () => {

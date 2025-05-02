@@ -9,7 +9,7 @@ import NavDropdownMenu from "./dependents/NavDropdownMenu";
 // CSS
 import "./navbar.scss";
 // Assets and Images
-import logo from "/assets/images/logo/logo.webp";
+import logo from "../../../assets/logo/logo.webp";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

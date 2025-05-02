@@ -1,0 +1,28 @@
+@use "../../../../css/variables" as *;
+
+.image-carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-carousel-container {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+.image-carousel-container img {
+  height: 200px; // Adjust as needed
+  width: auto;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
