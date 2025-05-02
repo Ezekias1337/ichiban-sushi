@@ -57,7 +57,7 @@ const Footer = () => {
               url="/about-us"
               openInNewTab={false}
             />
-            <FooterLink linkText="FAQ" url="/faqs" openInNewTab={false} />
+            <FooterLink linkText="All You Can Eat Policy" url="/all-you-can-eat-policy" openInNewTab={false} />
           </div>
         </div>
 

@@ -1,6 +1,6 @@
 // Library Imports
 import React, { useState } from "react";
-import { Link, /* useLocation */ } from "@tanstack/react-router";
+import { Link /* useLocation */ } from "@tanstack/react-router";
 // Functions, Helpers, Utils, and Hooks
 import useWindowWidth from "../../../hooks/useWindowWidth";
 // Components
@@ -16,9 +16,8 @@ const Navbar: React.FC = () => {
   const windowWidth = useWindowWidth();
   //const location = useLocation();
 
-
   //const listOfUrlsToUseGlassmorphicVariant = ["/", "/login"];
-  const variant: string = "default"
+  const variant: string = "default";
 
   /* if (listOfUrlsToUseGlassmorphicVariant.includes(location.pathname)) {
     variant = "glassmorphic";
@@ -29,8 +28,6 @@ const Navbar: React.FC = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
-
 
   return (
     <nav
@@ -46,7 +43,9 @@ const Navbar: React.FC = () => {
           </button>
         )}
       </div>
-      <div className={`navbar-menu${isOpen ? " navbar-menu-open" : ""} z-index-2`}>
+      <div
+        className={`navbar-menu${isOpen ? " navbar-menu-open" : ""} z-index-2`}
+      >
         <ul className="space-around-flex align-items-center">
           <li>
             <AnimatedNavLink linkText="Home" url="/" />
@@ -60,8 +59,8 @@ const Navbar: React.FC = () => {
                   url: "/about-us",
                 },
                 {
-                  text: "FAQ",
-                  url: "/faqs",
+                  text: "All You Can Eat Policy",
+                  url: "/all-you-can-eat-policy",
                 },
               ]}
             />

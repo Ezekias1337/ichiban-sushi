@@ -9,7 +9,7 @@ const PageNotFound = () => (
   <div className="page-not-found padding-left-and-right">
     <HelmetProvider>
       <Helmet>
-        <title>Code Decoded | Page Not Found</title>
+        <title>Ichiban Sushi | Page Not Found</title>
       </Helmet>
     </HelmetProvider>
 

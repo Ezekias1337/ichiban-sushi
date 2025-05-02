@@ -1,0 +1,7 @@
+1.) Get Email and Update Footer Accordingly || 
+2.) Apply Social Media Links to Footer Buttons || 
+3.) Select Reviews to Display || Done
+4.) Apply links to the Food Delivery Buttons || 
+5.) Choose different images for the bottom carousel || 
+6.) Add animations on the home page || 
+7.) Add assets to the edges of the page || 
