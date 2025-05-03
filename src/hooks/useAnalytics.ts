@@ -31,6 +31,7 @@ const useAnalytics = () => {
                     userIdentifier,
                     userAgentInfo,
                     pageVisits,
+                    baseUrl: "https://ezekias1337.github.io/ichiban-sushi/",
                 };
 
                 console.log(payload);
