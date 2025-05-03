@@ -136,15 +136,15 @@
 
     .bar-promo-text {
       color: $primary-100;
-      opacity: 0;
-      left: 100%;
+      opacity: 1;
 
       &.bar-promo-text-animated {
-        opacity: 1;
-        left: 0;
+        opacity: 0;
         animation-name: fade-in-left;
         animation-timing-function: ease-in;
         animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-delay: 0.5s;
       }
     }
 
