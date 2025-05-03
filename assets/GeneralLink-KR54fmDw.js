@@ -1,1 +1,0 @@
-import{j as a,L as o}from"./index-8jzKbCGc.js";const k=({text:n,url:e,openInNewTab:t,additionalClassNames:r,variant:i="primary"})=>a.jsx(o,{to:e,className:`general-link ${i}-link ${r!==void 0?r:""}`,target:t?"_blank":"",children:n});export{k as G};
