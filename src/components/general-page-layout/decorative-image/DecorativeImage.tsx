@@ -1,5 +1,3 @@
-// Library Imports
-import { FC } from "react";
 // Hooks
 import useIntersectionAnimation from "../../../hooks/useIntersectionAnimation";
 // CSS
@@ -17,7 +15,7 @@ export interface DecorativeImageProps {
     | "bottom-right";
 }
 
-const DecorativeImage: FC<DecorativeImageProps> = ({
+const DecorativeImage: React.FC<DecorativeImageProps> = ({
   imgSrc,
   imgAlt,
   position,

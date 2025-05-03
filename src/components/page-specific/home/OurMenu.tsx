@@ -14,7 +14,7 @@ import NigiriImage from "../../../assets/menu/ngiri.png";
 import SignatureRollImage from "../../../assets/menu/signature-roll.png";
 
 import Teapot from "../../../assets/items/teapot.png";
-import SamuraiSword from "../../../assets/items/samurai-sword-1.png";
+import SamuraiSword from "../../../assets/items/samurai-sword-2.png";
 import BowlOfRice from "../../../assets/items/bowl-of-rice.png";
 
 const OurMenu: React.FC = () => {
@@ -87,12 +87,13 @@ const OurMenu: React.FC = () => {
         imgAlt="Bowl of Rice"
         position="top-left"
       />
-      <DecorativeImage imgSrc={Teapot} imgAlt="Teapot" position="center-right" />
       <DecorativeImage
         imgSrc={SamuraiSword}
         imgAlt="Handfan"
-        position="bottom-left"
+        position="center-right"
       />
+      <DecorativeImage imgSrc={Teapot} imgAlt="Teapot" position="bottom-left" />
+      
 
       <div className="menu-wrapper full-flex gap-40">
         <div className="menu-items display-grid gap-20">

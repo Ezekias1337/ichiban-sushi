@@ -66,7 +66,11 @@ const Reviews: React.FC = () => {
     <section className="our-reviews padding-left-and-right padding-top-80 padding-bottom-80 position-relative">
       <h2 className="page-title">Our Reviews</h2>
 
-      <DecorativeImage imgSrc={Sake} imgAlt="Sake Bottle" position="top-right" />
+      <DecorativeImage
+        imgSrc={Sake}
+        imgAlt="Sake Bottle"
+        position="top-right"
+      />
       <DecorativeImage
         imgSrc={Handfan1}
         imgAlt="Handfan"
@@ -79,9 +83,10 @@ const Reviews: React.FC = () => {
       />
 
       <div className="reviews-wrapper display-grid">
-        {reviews.map((review) => {
+        {reviews.map((review, index) => {
           return (
             <CustomerReview
+              key={index}
               authorImage={review.authorImage}
               authorName={review.authorName}
               rating={review.rating}

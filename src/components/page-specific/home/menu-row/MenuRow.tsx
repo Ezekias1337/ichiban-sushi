@@ -13,7 +13,7 @@ const MenuRow: React.FC<MenuRowProps> = ({ title, description, isLast }) => {
       <hr className="menu-row-hr"></hr>
       <div className="menu-row-container display-flex justify-content-left flex-direction-column full-width">
         <h5>{title}</h5>
-        <p>{description}</p>
+        <p className="padding-top-20">{description}</p>
       </div>
       {isLast && <hr className="menu-row-hr"></hr>}
     </>
