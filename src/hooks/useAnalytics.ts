@@ -2,8 +2,9 @@
 import { useEffect, useMemo } from "react";
 // Functions, Helpers, Utils, and Hooks
 import fetchData from "../functions/network/fetchData";
-import useDeviceInfo from "./useDeviceInfo";
 import generateRandomId from "../utils/generateRandomId";
+import useDeviceInfo from "./useDeviceInfo";
+
 // Constants
 const ANALYTICS_SERVER_URL = import.meta.env.VITE_ANALYTICS_SERVER_URL;
 
