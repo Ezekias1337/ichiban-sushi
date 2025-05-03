@@ -1,54 +1,54 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🍣 Sushi Restaurant Website
 
-Currently, two official plugins are available:
+A responsive and modern website for a local sushi restaurant, built with **React** and **TypeScript**. The site features an interactive menu, ordering links, promotional callouts, and custom pages for policies and contact info.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- Built with **React** and **TypeScript**
+- Fully responsive layout
+- Live links to third-party ordering platforms (Grubhub, Uber Eats)
+- "All You Can Eat" policy page
+- Dynamic promotions (e.g. bar seating specials)
+- Social media integration (Facebook, Twitter)
+- Clean, reusable component structure
+- SEO-friendly markup and accessibility-focused design
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧱 Tech Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React** (with functional components and hooks)
+- **TypeScript**
+- **Vite** (for fast development and bundling)
+- **SCSS Modules** (for scoped, maintainable styling)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔧 Setup Instructions
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Clone the repository**
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+   ```bash
+   git clone https://github.com/yourusername/sushi-website.git
+   cd sushi-website
+   ```
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+3. **Start the development server**
+
+   ```bash
+   npm run dev
+   ```
+4. **Build for production**
+
+   ```bash
+   npm run build
+   ```
+
+## 🌐 Deployment
+
+This site can be deployed to any static host (e.g. Netlify, Vercel, GitHub Pages) after running the build command. The output will be in the `/dist` directory.
+
+## 📄 License
+
+This project is private and intended for use by the sushi restaurant and its development team.
