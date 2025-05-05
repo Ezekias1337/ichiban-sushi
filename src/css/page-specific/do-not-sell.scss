@@ -1,0 +1,21 @@
+@use "../../css/variables" as *;
+
+.do-not-sell {
+  background-color: $neutral-100;
+
+  h1.page-title {
+    color: $primary-500;
+  }
+
+  .do-not-sell-wrapper {
+    color: $neutral-900;
+    padding-bottom: 80px;
+
+    label {
+      font-size: $header-6;
+      &.switch-label {
+        padding-left: 0px !important;
+      }
+    }
+  }
+}

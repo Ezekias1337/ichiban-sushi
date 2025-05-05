@@ -2,8 +2,8 @@
 import React, { FC, useEffect, useState } from "react";
 // Functions, Helpers, Utils and Hooks
 import { handleSwitchChange } from "../../functions/handleFormChange";
-import { camelCasifyString } from "../../../../../../../shared/utils/strings/camelCasifyString";
-import { kebabCasifyString } from "../../../../../../../shared/utils/strings/kebabCasifyString";
+import camelCasifyString from "../../../../../utils/camelCasifyString";
+import kebabCasifyString from "../../../../../utils/kebabCasifyString";
 // Interfaces and Types
 import { SwitchUpdateEvent } from "../../constants/formTypes";
 import { SwitchFieldProps } from "../../constants/formProps";

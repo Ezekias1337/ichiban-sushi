@@ -23,6 +23,14 @@ const PrivacyPolicy = () => (
         information when you visit our website.
       </p>
 
+      <p>
+        Some analytics data on this site is collected and processed by our web
+        development partner, <strong>Your Company Name</strong>, who may use
+        this data to analyze visitor behavior across multiple client websites
+        they maintain. No personally identifiable information is shared between
+        client websites.
+      </p>
+
       <h2 className="padding-top-40 padding-bottom-20">
         1. Information We Collect
       </h2>
@@ -33,10 +41,22 @@ const PrivacyPolicy = () => (
         your browsing experience and enhance our services.
       </p>
       <p>
-        <strong>b. Cookies:</strong> We use cookies to gather information about
-        your interactions with our website, including pages visited, time spent
-        on each page, and other browsing behaviors. Cookies help us personalize
-        your experience, analyze trends, and optimize site functionality.
+        <strong>b. Cookies:</strong> We use cookies to track your session and to
+        store your preferences (such as dismissing cookie banners). Cookies help
+        us personalize your experience, analyze trends, and optimize site
+        functionality.
+      </p>
+      <p>
+        <strong>c. Usage Data:</strong> We collect information about the pages
+        you visit, the order in which you visit them, and how long you stay on
+        each page. We may also log timestamps and detect the device type, OS,
+        and browser version.
+      </p>
+      <p>
+        <strong>d. Cross-Site Analytics:</strong> Our development partner may
+        use anonymized or pseudonymized identifiers to analyze user behavior
+        across multiple websites they manage. This helps them improve the
+        functionality and design of the websites they build.
       </p>
 
       <h2 className="padding-top-40 padding-bottom-20">
@@ -48,9 +68,10 @@ const PrivacyPolicy = () => (
         overall user experience.
       </p>
       <p>
-        <strong>b. Analytics:</strong> We analyze website usage data to better
-        understand user behavior and preferences, which helps us tailor content
-        and make informed decisions.
+        <strong>b. Analytics:</strong> Usage data is analyzed to better
+        understand user behavior and preferences. Our development partner may
+        aggregate anonymous analytics data to inform broader performance and
+        compatibility improvements across client sites.
       </p>
 
       <h2 className="padding-top-40 padding-bottom-20">
@@ -63,7 +84,13 @@ const PrivacyPolicy = () => (
         are contractually obligated to protect your data.
       </p>
       <p>
-        <strong>b. Legal Compliance:</strong> We may disclose your information
+        <strong>b. Web Development Partner:</strong> Anonymized analytics data
+        may be shared with and stored by our development partner for performance
+        tracking and website optimization across multiple projects. This data
+        does not include personally identifiable information.
+      </p>
+      <p>
+        <strong>c. Legal Compliance:</strong> We may disclose your information
         when required by law, legal proceedings, or to protect the rights,
         property, or safety of Ichiban Sushi or others.
       </p>
@@ -77,9 +104,28 @@ const PrivacyPolicy = () => (
         website may not function correctly if cookies are disabled.
       </p>
       <p>
-        <strong>b. Opt-Out:</strong> You may opt out of receiving promotional
-        emails from us. To unsubscribe, follow the instructions in our emails or
-        contact us directly.
+        <strong>b. Promotional Emails:</strong> You may opt out of receiving
+        promotional emails from us. To unsubscribe, follow the instructions in
+        our emails or contact us directly.
+      </p>
+      <p>
+        <strong>c. Do Not Sell or Share My Personal Information:</strong> If you
+        are a California resident, you have the right to opt out of the "sale"
+        or "sharing" of your personal information (as defined by the California
+        Consumer Privacy Act and California Privacy Rights Act). You may
+        exercise this right by visiting our{" "}
+        <GeneralLink
+          text="Do Not Sell or Share My Info"
+          url="/do-not-sell"
+          openInNewTab={false}
+        />{" "}
+        page.
+      </p>
+      <p>
+        <strong>d. Global Privacy Control (GPC):</strong> We honor browser-based
+        opt-out signals sent using the Global Privacy Control standard. If your
+        browser is configured to send a GPC signal, we will treat it as a valid
+        opt-out request.
       </p>
 
       <h2 className="padding-top-40 padding-bottom-20">5. Data Security</h2>

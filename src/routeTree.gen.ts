@@ -19,6 +19,7 @@ import { Route as rootRoute } from './routes/__root'
 const TermsOfServiceLazyImport = createFileRoute('/terms-of-service')()
 const PrivacyPolicyLazyImport = createFileRoute('/privacy-policy')()
 const PageNotFoundLazyImport = createFileRoute('/page-not-found')()
+const DoNotSellLazyImport = createFileRoute('/do-not-sell')()
 const AllYouCanEatPolicyLazyImport = createFileRoute(
   '/all-you-can-eat-policy',
 )()
@@ -50,6 +51,12 @@ const PageNotFoundLazyRoute = PageNotFoundLazyImport.update({
 } as any).lazy(() =>
   import('./routes/page-not-found.lazy').then((d) => d.Route),
 )
+
+const DoNotSellLazyRoute = DoNotSellLazyImport.update({
+  id: '/do-not-sell',
+  path: '/do-not-sell',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/do-not-sell.lazy').then((d) => d.Route))
 
 const AllYouCanEatPolicyLazyRoute = AllYouCanEatPolicyLazyImport.update({
   id: '/all-you-can-eat-policy',
@@ -96,6 +103,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AllYouCanEatPolicyLazyImport
       parentRoute: typeof rootRoute
     }
+    '/do-not-sell': {
+      id: '/do-not-sell'
+      path: '/do-not-sell'
+      fullPath: '/do-not-sell'
+      preLoaderRoute: typeof DoNotSellLazyImport
+      parentRoute: typeof rootRoute
+    }
     '/page-not-found': {
       id: '/page-not-found'
       path: '/page-not-found'
@@ -126,6 +140,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexLazyRoute
   '/about-us': typeof AboutUsLazyRoute
   '/all-you-can-eat-policy': typeof AllYouCanEatPolicyLazyRoute
+  '/do-not-sell': typeof DoNotSellLazyRoute
   '/page-not-found': typeof PageNotFoundLazyRoute
   '/privacy-policy': typeof PrivacyPolicyLazyRoute
   '/terms-of-service': typeof TermsOfServiceLazyRoute
@@ -135,6 +150,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexLazyRoute
   '/about-us': typeof AboutUsLazyRoute
   '/all-you-can-eat-policy': typeof AllYouCanEatPolicyLazyRoute
+  '/do-not-sell': typeof DoNotSellLazyRoute
   '/page-not-found': typeof PageNotFoundLazyRoute
   '/privacy-policy': typeof PrivacyPolicyLazyRoute
   '/terms-of-service': typeof TermsOfServiceLazyRoute
@@ -145,6 +161,7 @@ export interface FileRoutesById {
   '/': typeof IndexLazyRoute
   '/about-us': typeof AboutUsLazyRoute
   '/all-you-can-eat-policy': typeof AllYouCanEatPolicyLazyRoute
+  '/do-not-sell': typeof DoNotSellLazyRoute
   '/page-not-found': typeof PageNotFoundLazyRoute
   '/privacy-policy': typeof PrivacyPolicyLazyRoute
   '/terms-of-service': typeof TermsOfServiceLazyRoute
@@ -156,6 +173,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about-us'
     | '/all-you-can-eat-policy'
+    | '/do-not-sell'
     | '/page-not-found'
     | '/privacy-policy'
     | '/terms-of-service'
@@ -164,6 +182,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about-us'
     | '/all-you-can-eat-policy'
+    | '/do-not-sell'
     | '/page-not-found'
     | '/privacy-policy'
     | '/terms-of-service'
@@ -172,6 +191,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about-us'
     | '/all-you-can-eat-policy'
+    | '/do-not-sell'
     | '/page-not-found'
     | '/privacy-policy'
     | '/terms-of-service'
@@ -182,6 +202,7 @@ export interface RootRouteChildren {
   IndexLazyRoute: typeof IndexLazyRoute
   AboutUsLazyRoute: typeof AboutUsLazyRoute
   AllYouCanEatPolicyLazyRoute: typeof AllYouCanEatPolicyLazyRoute
+  DoNotSellLazyRoute: typeof DoNotSellLazyRoute
   PageNotFoundLazyRoute: typeof PageNotFoundLazyRoute
   PrivacyPolicyLazyRoute: typeof PrivacyPolicyLazyRoute
   TermsOfServiceLazyRoute: typeof TermsOfServiceLazyRoute
@@ -191,6 +212,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexLazyRoute: IndexLazyRoute,
   AboutUsLazyRoute: AboutUsLazyRoute,
   AllYouCanEatPolicyLazyRoute: AllYouCanEatPolicyLazyRoute,
+  DoNotSellLazyRoute: DoNotSellLazyRoute,
   PageNotFoundLazyRoute: PageNotFoundLazyRoute,
   PrivacyPolicyLazyRoute: PrivacyPolicyLazyRoute,
   TermsOfServiceLazyRoute: TermsOfServiceLazyRoute,
@@ -209,6 +231,7 @@ export const routeTree = rootRoute
         "/",
         "/about-us",
         "/all-you-can-eat-policy",
+        "/do-not-sell",
         "/page-not-found",
         "/privacy-policy",
         "/terms-of-service"
@@ -222,6 +245,9 @@ export const routeTree = rootRoute
     },
     "/all-you-can-eat-policy": {
       "filePath": "all-you-can-eat-policy.lazy.tsx"
+    },
+    "/do-not-sell": {
+      "filePath": "do-not-sell.lazy.tsx"
     },
     "/page-not-found": {
       "filePath": "page-not-found.lazy.tsx"
