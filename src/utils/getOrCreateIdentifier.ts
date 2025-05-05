@@ -1,5 +1,5 @@
-// Functions, Helpers, Utils, and Hooks
-import generateRandomId from "./generateRandomId";
+// Library Imports
+import { v4 as uuidv4 } from "uuid";
 
 const getOrCreateIdentifier = (hasGlobalPrivacyControl: boolean, hasCookieConsent: boolean): string | null => {
     let identifier = localStorage.getItem("userIdentifier");
@@ -9,7 +9,7 @@ const getOrCreateIdentifier = (hasGlobalPrivacyControl: boolean, hasCookieConsen
     }
 
     if (!identifier) {
-        identifier = generateRandomId();
+        identifier = uuidv4();
         localStorage.setItem("userIdentifier", identifier);
     }
 
